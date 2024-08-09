@@ -1,0 +1,60 @@
+/* Grocery grid layout */
+.grocery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  /* Grocery item box styling */
+  .grocery-item {
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Color coding based on grocery type */
+  .grocery-item.fruit {
+    background-color: #f28b82; /* Light red for fruits */
+  }
+  
+  .grocery-item.vegetable {
+    background-color: #81c995; /* Light green for vegetables */
+  }
+  
+  .grocery-item.spice {
+    background-color: #ffcc80; /* Light orange for spices */
+  }
+  
+  .grocery-item.grain {
+    background-color: #fff176; /* Light yellow for grains */
+  }
+  
+  .grocery-item.dairy {
+    background-color: #90caf9; /* Light blue for dairy */
+  }
+  
+  .grocery-item.snacks {
+    background-color: #ffab91; /* Light coral for snacks */
+  }
+  
+  .grocery-item.beverage {
+    background-color: #b39ddb; /* Light purple for beverages */
+  }
+  
+  .grocery-item.sweetener {
+    background-color: #ffe082; /* Light amber for sweeteners */
+  }
+  
+  .grocery-item.default {
+    background-color: #cfd8dc; /* Default grey for other types */
+  }
+  
+  /* Optional: Adding a hover effect */
+  .grocery-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  

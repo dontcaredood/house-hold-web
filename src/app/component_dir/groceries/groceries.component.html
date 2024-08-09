@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div *ngIf="groceries.length > 0">
+  <h4>Groceries: {{groceries.length}}</h4>
+  <div class="grocery-grid">
+    <div *ngFor="let u of groceries" class="grocery-item" [ngClass]="getGroceryClass(u.groceryType)">
+      <h2>{{ u.groceryName }}</h2>
+      <p>{{ u.groceryType }}</p>
+    </div>
+  </div>
+</div>
+<div *ngIf="groceries.length == 0">
+  <h3>No Groceries available!</h3>
+</div>
