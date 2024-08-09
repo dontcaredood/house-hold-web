@@ -12,9 +12,22 @@ export class GroceriesComponent implements OnInit {
 
   groceries:Grocery[] = [];
 
+  sortByName = "groceryName";
+  sortByType = "groceryType";
+
   ngOnInit(): void {
-    this.groceriesService.getGroceries().subscribe(response => {
-      console.log("Data "+response)
+    this.groceriesService.getGroceries(this.sortByName).subscribe(response => {
+      this.groceries =[]
+      this.groceries = response.groceriesList;
+      
+    });
+  }
+
+  getGroceriesSortByName(){this.ngOnInit()}
+
+  getGroceriesSortByType(){
+    this.groceriesService.getGroceries(this.sortByType).subscribe(response => {
+      this.groceries =[]
       this.groceries = response.groceriesList;
       
     });

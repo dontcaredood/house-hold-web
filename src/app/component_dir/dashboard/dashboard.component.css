@@ -1,0 +1,92 @@
+.homepage-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .hero-section {
+    background: url('/src/assets/images/background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    color: white;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out 0.5s;
+  }
+  
+  .cta-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #cc5200;
+  }
+  
+  .feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .feature {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .feature h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .feature p {
+    color: #555;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature img:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

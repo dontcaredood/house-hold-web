@@ -1,10 +1,18 @@
+
 <app-navbar></app-navbar>
+
 <div *ngIf="groceries.length > 0">
   <h4>Groceries: {{groceries.length}}</h4>
+  <div>
+    <button (click)="ngOnInit ()">Name</button>
+    <button (click)="getGroceriesSortByType()">Type</button>
+  </div>
+  
   <div class="grocery-grid">
     <div *ngFor="let u of groceries" class="grocery-item" [ngClass]="getGroceryClass(u.groceryType)">
-      <h2>{{ u.groceryName }}</h2>
-      <p>{{ u.groceryType }}</p>
+      <h3>{{ u.groceryName }}</h3>
+      <p>{{u.groceryType}}</p>
+      <!-- <p>{{ u.groceryType }}</p> -->
     </div>
   </div>
 </div>

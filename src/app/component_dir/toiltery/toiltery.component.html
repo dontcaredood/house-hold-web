@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div *ngIf="toiletries.length > 0">
+  <h4>Toiletries: {{toiletries.length}}</h4>
+  <div>
+    <button (click)="ngOnInit ()">Name</button>
+    <button (click)="getListSortByType()">Type</button>
+  </div>
+  <div class="toiletries-grid">
+    <div *ngFor="let u of toiletries" class="toiletries-item" [ngClass]="getToiletriesClass(u.toiletryType)">
+      <h3>{{ u.toiletryName }}</h3>
+    </div>
+  </div>
+</div>
+<div *ngIf="toiletries.length == 0">
+  <h3>No Toiletries available!</h3>
+</div>

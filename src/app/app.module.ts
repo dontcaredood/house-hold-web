@@ -8,6 +8,8 @@ import { GroceriesComponent } from './component_dir/groceries/groceries.componen
 import { NavbarComponent } from './component_dir/navbar/navbar.component';
 import { MedicineComponent } from './component_dir/medicine/medicine.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProductsComponent } from './component_dir/products/products.component';
+import { ToilteryComponent } from './component_dir/toiltery/toiltery.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     GroceriesComponent,
     NavbarComponent,
     MedicineComponent,
-    SidebarComponent
+    SidebarComponent,
+    ProductsComponent,
+    ToilteryComponent
   ],
   imports: [
     BrowserModule,

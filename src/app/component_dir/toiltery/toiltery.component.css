@@ -1,0 +1,55 @@
+/* General container for the toiletries grid */
+.toiletries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  /* Styling for each grid item */
+  .toiletries-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    color: rgb(84, 83, 83);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hover effects for the items */
+  .toiletries-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Specific styles for different types of toiletries */
+  .toiletryType1 {
+    background-color: #14bbd1; /* Light cyan */
+  }
+  
+  .toiletryType2 {
+    background-color: #bbfa72; /* Light lime */
+  }
+  
+  .toiletryType3 {
+    background-color: #f6d572; /* Light amber */
+  }
+  
+  .toiletryType4 {
+    background-color: #e4958c; /* Light pink */
+  }
+  
+  .toiletryType5 {
+    background-color: #9071cb; /* Light purple */
+  }
+  
+  .toiletryType6 {
+    background-color: #58f45e; /* Light green */
+  }
+  
+  /* Add more type-specific classes if needed */
+  
+
+  
